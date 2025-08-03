@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: calc(100vh - 40px);
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.username{
+    font-weight: 700;
+}
+
+.usertitle{
+    font-size: 12;
+    color: var(--textsoft);
+}
+
+.userImage{
+    border-radius: 50%;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}

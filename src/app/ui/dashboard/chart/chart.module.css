@@ -1,0 +1,5 @@
+.container{
+    height: 350px;
+    background-color: var(--bgsoft);
+    border-radius: 10px;
+}
