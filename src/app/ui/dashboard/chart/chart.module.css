@@ -1,5 +1,6 @@
 .container{
     height: 350px;
-    background-color: var(--bgsoft);
+    background: #c2cde9;
     border-radius: 10px;
+    margin-top: 20px;
 }

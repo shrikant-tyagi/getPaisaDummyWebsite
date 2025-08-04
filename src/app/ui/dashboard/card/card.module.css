@@ -2,14 +2,12 @@
     padding: 10px;
     display: flex;
     gap: 20px;
-    /* align-items:first baseline */
     border-radius: 10px;
-    background: var(--bgsoft);
+    background: #c2cde9;
 }
 
 .info{
     display: flex;
     flex-direction: column;
     gap: 10px;
-   
 }

@@ -16,7 +16,6 @@ const page = () => {
             <Card />
           </div>
 
-          <Transactions />
 
           <Chart />
         </div>

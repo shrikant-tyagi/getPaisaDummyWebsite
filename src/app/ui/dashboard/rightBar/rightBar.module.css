@@ -1,7 +1,7 @@
 .container{
     padding: 10px;
     margin: 0px 0px 0px 10px;
-    background-color: var(--bgsoft);
+    background: #c2cde9;
     border-radius: 10px;
     height: calc(100vh - 130px);
     width: 260px;

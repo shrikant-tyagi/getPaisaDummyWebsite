@@ -1,11 +1,52 @@
-import React from 'react'
+"use client"
 
-const page = () => {
+import React from 'react';
+import styles from './login.module.css';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+
+
+const loginPage = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const router = useRouter();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch('/api/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+    });
+
+    if (res.ok) {
+      router.push('/dashboard');
+    } else {
+      alert('Login failed');
+    }
+  };
+
   return (
-    <div>
-        Login page
+    <div className={styles.container}>
+        <form onSubmit={handleLogin} className={styles.form} >
+          <h1 className={styles.heading}>Login</h1>
+
+          <input type='email' 
+          placeholder='Email' 
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <input type='password' 
+          placeholder='Password' 
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type='submit'>Login</button>
+        </form>
     </div>
   )
 }
 
-export default page
+export default loginPage
