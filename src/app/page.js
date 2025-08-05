@@ -22,8 +22,8 @@ export default function Home() {
           <div>
             Discover a new way to manage your finances with ease and confidence. 
             At GetPaisa, we believe that everyone deserves brighter financial future.
-            Whether you're looking for a personal loan, managing your budget, 
-            we're here to help you every step of the way.
+            Whether you&apos;re looking for a personal loan, managing your budget, 
+            we&apos;re here to help you every step of the way.
           </div>
           <div>
             Attractive Interest Rates Starting From 18% <sup className="text-red-600">*</sup>
