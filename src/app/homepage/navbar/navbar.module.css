@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border-bottom: solid 1px;
+}
+
+.menu{
+    flex: 4;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu div:hover{
+    scale: 110%;
+    cursor: pointer;
+    animation: slideIn ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(110%);
+  }
+}
+
+.loginbutton{
+    padding: 10px;
+    background-color: #1D2E6A;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -3,7 +3,7 @@ import Navbar from '../ui/dashboard/navbar/navbar';
 import Sidebar from '../ui/dashboard/sidebar/sidebar';
 import styles from '../ui/dashboard/dashboard.module.css';
 
-const layout = ({children}) => {
+const dashboardLayout = ({children}) => {
   return (
     <div className={styles.container}>
         <div className={styles.menu}>
@@ -18,4 +18,4 @@ const layout = ({children}) => {
   )
 }
 
-export default layout
+export default dashboardLayout

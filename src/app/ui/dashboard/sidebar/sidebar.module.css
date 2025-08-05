@@ -3,7 +3,9 @@
     flex-direction: column;
     row-gap: 20px;
     height: 100vh;
-    background-color: #182237;
+    /* background-color: #182237; */
+    /* background: linear-gradient(#2875D5, #1D2E6A); */
+    background: linear-gradient(to top, #2875D5, #1D2E6A);
     color: white;
     padding: 20px;
 }
